@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block headtitle %}
+  {{ title }}
+{% endblock headtitle %}
+
+{% block content %}
+    <div class="container py-5">
+        <div class="modern-box mt-5">  
+                <h2>Kata Kata Motivasi 💪</h2>
+                <p>Kata bijak yang fresh banget buat nyemangatin hari-hari lo. 💫</p>
+                <h1 id="quoteText" class="py-5"></h1>
+            </div>  
+        </div>
+    </div>
+    <div class="center-button">
+        <button href="#" class="btn btn-custom btn-lg" id="copyButton" onClick="myFunction();">📋 Salin </button>
+        <button id="newQuoteButton" class="btn btn-custom btn-lg">💬 Get a New Quote</button>
+    </div>
+
+    
+    <script src="{% static 'motivasi/js/app.js' %}"></script>
+    
+{% endblock content %}

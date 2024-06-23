@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block headtitle %}
+    {{title}}
+{% endblock headtitle %}
+
+{% block content %}
+<div class="container container-custom"> 
+  <div class="row my-5">
+    {% for link ,judul, deskripsi in card %}
+    <div class="col-sm-6 mb-2 mt-5">
+        <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">{{ judul }}</h5>
+                <p class="card-text">{{ deskripsi }}</p>
+                <a href="{{link}}" class="btn btn-custom">Gaskeeun cuy 🚀</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>  
+{% include "snippets/footer.html" %}
+{% endblock content %}

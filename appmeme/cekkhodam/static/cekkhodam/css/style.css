@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+.btn-custom{
+    background-color: #FF1744; 
+    color: white;
+    border-color: #FF1744;
+}
+.btn-custom:hover{
+    background-color: #FF1744; 
+    color: white;
+    border-color: #FF1744;
+}
+.btn-custom.clicked {
+    background-color: #FF1744; /* Red color when clicked */
+    border-color: #FF1744;
+}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block headtitle %}
+  {{ title }}
+{% endblock headtitle %}
+
+{% block content %}
+
+    <div class="container py-5">
+        <div class="modern-box mt-5">
+            
+            <h2>Random Jokes Receh 😂😂</h2>
+            <p>Cari-cari memes lucu dan random di sini nich 😂😂 !</p>
+            <h1 class="py-5" id="jokes_random"></h1>
+            
+        </div>
+        
+    </div>
+    <div class="center-button">
+        <button href="#" class="btn btn-custom btn-lg" id="copyButton" onClick="myFunction();">📋 Salin </button>
+        <button href="#" class="btn btn-custom btn-lg" onClick="window.location.reload();">🔄 Generate</button>
+    </div>
+
+    
+    <script src="{% static 'randommemes/js/app.js' %}"></script>
+    
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block headtitle %}
+{{title}}
+{% endblock headtitle %}
+    
+    
+
+{% block content %}
+    
+    <div class="container center-container">
+        <div class="card p-4 shadow">
+            <h2 class="text-center mb-4">Cek Khodam</h2>
+            <form id="cekKhodamForm">
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Silahkan masukkan nama dulu ngab !</label>
+                    <input type="text" class="form-control" id="nama" placeholder="Masukkan nama anda" required>
+                </div>
+                <div class="d-grid">
+                    <button id="btnLoad" type="submit" class="btn btn-custom btn-lg">Cek Khodam</button>
+                </div>
+            </form>
+        </div>
+        <h3 class="text-center py-2 my-2">Khodam yang lu miliki adalah :</h3>
+        <h1 class="text-center" id="jsonDataDisplay"></h1>
+    </div>
+
+    <script src="{% static 'cekkhodam/js/app.js' %}"></script>
+{% endblock content %}

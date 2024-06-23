@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+*{
+    font-family: "Rowdies", sans-serif;
+}
+.navbar-red-primary{
+    background-color: #FF5252;
+}
+.btn-custom{
+    background-color: #FF1744; 
+    color: white;
+    border-color: #FF1744;
+}
+.btn-custom:hover{
+    background-color: #FF1744; 
+    color: white;
+    border-color: #FF1744;
+}
+.btn-custom.clicked {
+    background-color: #FF1744; /* Red color when clicked */
+    border-color: #FF1744;
+}
+.card {
+    height: 100%;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-text {
+    flex-grow: 1;
+}
+.btn-custom {
+    margin-top: 10px;
+}
